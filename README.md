@@ -55,12 +55,52 @@ Envie o cabeçalho “X-Content-Type-Options: nosniff” para evitar que o Inter
 
 # Firewall:
 
+Proteção para seu site.
 
 # Firewall\Bots:
 
 Modo de combate a bots - (Ativar)
 
 * Solicitações de desafio que correspondem aos padrões de bots conhecidos antes de eles acessarem o seu site.
+
+# Speed:
+
+Otimizações ao seu site.
+
+# Speed\Otimizações: 
+
+Minificação Automática - (Ativar)
+
+
+JavaScript (x)
+
+CSS (x)
+
+HTML (x)
+
+Reduza o tamanho do arquivo do código-fonte no seu site.
+
+Nota: Limpe o cache para que sua alteração entre em vigor imediatamente.
+
+Esta configuração foi alterada pela última vez há poucos segundos
+
+Brotli - (Ativar)
+Acelere os tempos de carregamento de página para o tráfego HTTPS do visitante aplicando a compactação Brotli.
+
+***Otimização automática de plataformas para o WordPress - APO - (Analisar como instalar esse plugin no Worpress...)***
+
+***Rocket Loader™ - (Alerta não ativar esse recurso pois ele é incompativel com o elementor) ***
+
+***Móvel - (Alerta não ativar esse recurso pois ele pode quebrar o seu site ***
+URL AMP real
+Exiba o URL real do seu site em suas páginas AMP, em vez do URL tradicional do cache do Google AMP.
+Melhore o tempo de pintura para páginas que incluem JavaScript.
+
+
+
+
+
+
 
 
 

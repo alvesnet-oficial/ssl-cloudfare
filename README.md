@@ -5,3 +5,4 @@ Proporciona uma series de camadas de segurança ao seu site que proporciona um m
 - O cloudfare não faz cache de banco de dados
 - Mas faz cache de arquivos staticos exemplos: html, css e js
 - Se as informações de produto que voce está atualizando no seu site não está atualizando é porque voce está utilizando um 'cache de 
+- Cloudfare não é totalmente gratuito. Para sites comerciais (.com, .com.br, .net) ele possuem algus recursos gratuito. Para sites .org não permite utilizar recursos gratuito como instituição educacional e do governo.

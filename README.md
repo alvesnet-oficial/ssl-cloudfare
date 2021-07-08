@@ -18,10 +18,17 @@ Nenhuma criptografia aplicada
 
 # Flexível: 
 
-Criptografa o tráfego entre o navegador e o Cloudflare
+Criptografa o tráfego de dados apenas entre o navegador do visitante até os servidor da Cloudflare apenas. (não recomendado)
 
-- 
+Assim ele vai força o site para https, caso o seu site não esteja abrindo com https é necessário instalar um plugin 'Cloudfare Flexivel'
 
+NOTA 1: Se você quer garantir segurança ate o seu servidor é necessário instalar um plugin do wordpres SSL no seu servidor (recomendado). O plugin Realy Simple  SSL e alterar todos os protocolos http:// para https://.
+
+NOTA 2: Se voce não usa nenhum plugin que forçe os visita para https é necessário ativar essa opção abaixo:
+
+Reescrita Automática de HTTPS - (Ativar)
+As Reescritas Automáticas de HTTPS ajudam a corrigir conteúdo misto alterando “http” para “https” para todos os recursos ou links do seu site que podem ser fornecidos com HTTPS.
+ 
 # Completo: 
 
 Criptografa de ponta a ponta usando um certificado autoassinado no servidor

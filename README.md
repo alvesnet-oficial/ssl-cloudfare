@@ -1,6 +1,6 @@
 # ssl-cloudfare
 
-Proporciona uma series de camadas de segurança ao seu site que proporciona um mecanismo de busca melhor nas pesquisas do google, implantando uma nuvem de proxy utilizando a estrutura a nuvem do cloudfare.
+O Cloudfare é CDN (Rede de Entrega de Dados) que melhora a performance do seu site e proporciona uma series de camadas de segurança ao seu site que proporciona um mecanismo de busca melhor nas pesquisas do google, implantando uma nuvem de proxy utilizando a estrutura a nuvem do cloudfare.
 
 - O cloudfare não faz cache de banco de dados
 - Mas faz cache de arquivos staticos exemplos: html, css e js
@@ -19,6 +19,32 @@ Flexível: Criptografa o tráfego entre o navegador e o Cloudflare
 Completo: Criptografa de ponta a ponta usando um certificado autoassinado no servidor
 
 Completo (estrito): Criptografa de ponta a ponta, mas requer um certificado CA confiável ou CA de origem do Cloudflare no servidor
+
+* Existe uma criptografia entre 'Cloudfare' e o seu 'Servidor', e entre os 'Visitante' e o 'Cloudfare'.
+
+Requisito:
+
+1. Passo:
+- Ativar o Servidor SSL no seu servidor ex: Let's encrypts. Após ativar seu site vai gerar um erro, pois no 'Cloudfare' ate o momento não está ativo nenhum metodo de criptografia. Será necessário ativar o modo 'Completo (restrito). O Sincronismo para ativar o serviço pode demorar até 24hs mas pode ser que ativa a qualquer momento.
+
+2. Passo:
+  
+  Opção 1:
+
+- Ativar no seu Wordpress: Ativar os links em 'Configuraçoes Gerais' de http// para https://. Quando voce instalar o plugin "Realy Simple SSL' e ja faz essa mundaça de forma transparente se precisa mexer nas 'Configurações Gerais'. E configuração acima é o suficiente.
+
+ Opção 2: (Alternativa)
+ 
+ - Ativar no seu Wordpress: Desativar "Realy Simple SSL'. Atraves da Console Linux do seu servidor lina de comando executar o seguinte:
+ 
+   wp --allow-root search-replace --url=seudomninio.com.br http://seudomninio.com.br https://seudomninio.com.br --path=/var/www/seudomninio.com.br/htdocs
+
+* O comando acima vai procucar todas as ocorrencias do seu dominio com http e vai substitui por https e deixar seu site com o ssl ativo.
+
+NOTA: Se voce usou os passos acima não é necessário ativar essa opção abaixo:
+
+Reescrita Automática de HTTPS - (Desativado)
+As Reescritas Automáticas de HTTPS ajudam a corrigir conteúdo misto alterando “http” para “https” para todos os recursos ou links do seu site que podem ser fornecidos com HTTPS.
 
 # SS/TLS\Certificado de Borda:
 

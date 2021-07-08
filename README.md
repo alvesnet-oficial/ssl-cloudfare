@@ -12,13 +12,27 @@ O Cloudfare é CDN (Rede de Entrega de Dados) que melhora a performance do seu s
 
 Algumas hospedagem trabalha com algumas dessa modalidade abaixo, teremos que consultar nosso provedor de hospedagem:
 
-Desligado (não seguro): Nenhuma criptografia aplicada
+# Desligado (não seguro): 
 
-Flexível: Criptografa o tráfego entre o navegador e o Cloudflare
+Nenhuma criptografia aplicada
 
-Completo: Criptografa de ponta a ponta usando um certificado autoassinado no servidor
+# Flexível: 
 
-Completo (estrito): Criptografa de ponta a ponta, mas requer um certificado CA confiável ou CA de origem do Cloudflare no servidor
+Criptografa o tráfego entre o navegador e o Cloudflare
+
+- 
+
+# Completo: 
+
+Criptografa de ponta a ponta usando um certificado autoassinado no servidor
+
+- O SSL Let's encrypt faz a renovação automatica sozinho a cada 3 meses. Porem vamos imagina que por algum motivo seu servidor não está conseguindo fazer a renovação automatica e está apresentand erro na sua pagina de ssl em vermelho dizendo que o site não é seguro!. Isso é o ssl expirado pois passou o prazo do ssl. 
+
+- O Cloudfare possue essa função 'Completo' o cloudfare comunica via ssl com o seu servidor, e seus visitante acessa sua pagina via ssl pelo cloudfare, o cloudfare vai ignorar o alerta se seu site o ssl estiver expirado como não valido.
+
+# Completo (estrito): 
+
+Criptografa de ponta a ponta, mas requer um certificado CA confiável ou CA de origem do Cloudflare no servidor
 
 * Existe uma criptografia entre 'Cloudfare' e o seu 'Servidor', e entre os 'Visitante' e o 'Cloudfare'.
 

@@ -33,9 +33,9 @@ As Reescritas Automáticas de HTTPS ajudam a corrigir conteúdo misto alterando 
 
 Criptografa de ponta a ponta usando um certificado autoassinado no servidor
 
-- O SSL Let's encrypt faz a renovação automatica sozinho a cada 3 meses. Porem vamos imagina que por algum motivo seu servidor não está conseguindo fazer a renovação automatica e está apresentand erro na sua pagina de ssl em vermelho dizendo que o site não é seguro!. Isso é o ssl expirado pois passou o prazo do ssl. 
+- O SSL Let's encrypt faz a renovação automática sozinho a cada 3 meses. Porem vamos imagina que por algum motivo seu servidor não está conseguindo fazer a renovação automática e está apresentando erro na sua pagina de ssl em vermelho dizendo que o site não é seguro!. Isso é o ssl expirado pois passou o prazo do ssl. 
 
-- O Cloudfare possue essa função 'Completo' o cloudfare comunica via ssl com o seu servidor, e seus visitante acessa sua pagina via ssl pelo cloudfare, o cloudfare vai ignorar o alerta se seu site o ssl estiver expirado como não valido.
+- O Cloudflare possue essa função 'Completo' que se comunica via ssl com o seu servidor, e seus visitante acessa sua pagina via ssl pelo cloudflare, o cloudfare vai ignorar o alerta se no seu site o ssl estiver expirado como não valido.
 
 # Completo (estrito): 
 
@@ -118,7 +118,6 @@ Otimizações ao seu site.
 
 Minificação Automática - (Ativar)
 
-
 JavaScript (x)
 
 CSS (x)
@@ -142,25 +141,3 @@ Acelere os tempos de carregamento de página para o tráfego HTTPS do visitante 
 URL AMP real
 Exiba o URL real do seu site em suas páginas AMP, em vez do URL tradicional do cache do Google AMP.
 Melhore o tempo de pintura para páginas que incluem JavaScript.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
